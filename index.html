@@ -1,14 +1,96 @@
 <!DOCTYPE html>
-
-<h1>Tommy Armstrong</h1>
-<h2>About</h2>
-<p>Hi there, I'm a software developer at a company called SAS. We specialize in the development of applications that visualize and process data analytics in various industries. I specifically work on tools in the financial sector that help banks comply with federal regulations.</p>
-<h2>Experience</h2>
-<ul>
-  <li>Oregon State Universtiy - Computer Science</li>
-  <li>SAS Institute Inc. - Software Developer</li>
-  <li>Code the Dream - Volunteer</li>
-</ul>
-<h2>Connect</h2>
-<p><a href="https://github.com/armte">My Github</a></p>
-<p><a href="https://www.linkedin.com/in/ta312/">My LinkedIn</a></p>
+  <head>
+    <title>Tommy Armstrong - Main Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tommy Armstrong's Informational Web Page">
+    <meta name="author" content="Tommy Armstrong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="sticky" id="navbar">
+      <a href="#About">About</a>
+      <a href="#Experience">Experience</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Connect">Connect</a>
+    </div>
+    <div class="content">
+      <h1 class="custom-font-2">Tommy Armstrong</h1>
+      <section id="About">
+        <h2>About</h2>
+        <img src="01_MtBachelor_Selfie.jpg" alt="A selfie of Tommy Armstrong, the author of this page"/>
+        <p>Hi there, I'm a software developer at a company called SAS. We specialize in the development of applications that visualize and process data analytics in various industries. I specifically work on tools in the financial sector that help banks comply with federal regulations.</p>  
+      </section>
+      <section id="Experience">
+        <h2>Experience</h2>
+        <div class="flex-container">
+          <div class="row">
+            <div class="col-left">Oregon State Universtiy - Computer Science</div>
+            <div class="col-right">2018-2020</div>
+            <div class="col-all">Completed a Bachelor's of Science Degree in Computer Science</div>
+          </div>
+          <div class="row">
+            <div class="col-left">
+              SAS Institute Inc. - Software Developer
+            </div>
+            <div class="col-right">
+              2020 - Present
+            </div>
+            <div class="col-all">
+              Currently work as a software developer in the Fraud and Security Intelligence division at SAS Institute Inc. I started out as a consultant in the United States Professional Services and Delivery Division.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-left">
+              Code the Dream - Volunteer
+            </div>
+            <div class="col-right">
+              2022-Present
+            </div>
+            <div class="col-all">
+              I volunteer as a group mentor in the Introduction to Programming and Node.js classes.
+            </div>
+          </div>
+      </section>
+      <section id="Skills">
+        <h2>Skills</h2>
+      </section>
+      <section id="Projects">
+        <h2>Projects</h2>
+        <ol id="project_list"></ol>
+      </section>
+      <section id="Connect">
+        <h2>Connect</h2>
+        <ul>
+          <li><a href="https://github.com/armte" target="_blank" class="fa fa-github">My Github</a></li>
+          <li><a href="https://www.linkedin.com/in/ta312/" target="_blank" class="fa fa-linkedin">My LinkedIn</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+          <label for="usersName">Name:</label>
+          <input type="text" name="usersName">
+          <br>
+          <label for="usersEmail">Email:</label>
+          <input type="email" name="usersEmail">
+          <br>
+          <label for="usersMessage">Message:</label>
+          <textarea name="usersMessage"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+      </section>
+    </div>
+  </body>
+</html>
